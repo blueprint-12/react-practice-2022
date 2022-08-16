@@ -25,7 +25,7 @@ const BucketList = (props) => {
               history.push("/detail/" + index);
             }}
           >
-            {list}
+            {list.text}
           </ItemStyle>
         );
       })}
@@ -36,15 +36,18 @@ const BucketList = (props) => {
 const ListStyle = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   overflow-x: hidden;
+  //아래는 스크롤 바 주기
   overflow-y: auto;
+  height: 50vh;
+  max-height: 50vh;
 `;
 
 const ItemStyle = styled.div`
   padding: 16px;
   margin: 8px;
-  background-color: aliceblue;
+  color: ${(props) => (props.completed ? "#fff" : "#333")};
+  background-color: ${(props) => (props.completed ? "#673ab7" : "aliceblue")};
 `;
 
 export default BucketList;
