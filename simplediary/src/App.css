@@ -1,0 +1,78 @@
+.DiaryEditor {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+.DiaryEditor > * {
+  border-radius: 5px;
+  /* border: #feca57; */
+}
+
+.DiaryEditor input,
+textarea {
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 10px;
+}
+input:focus,
+textarea:focus {
+  outline: 2px solid #25ccf7;
+}
+
+.DiaryEditor textarea {
+  height: 150px;
+}
+
+.EmotionCounter select {
+  /* select 태그 기본 값 제거 */
+  /* -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; */
+
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.DiaryEditor button {
+  width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* List */
+
+.DiaryList {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+/* Item */
+
+.DiaryItem {
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.DiaryItem #info {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.DiaryItem .date {
+  color: gray;
+}
+
+.DiaryItem .content {
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
