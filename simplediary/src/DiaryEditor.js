@@ -1,12 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
+import { DiaryDispatchContext } from "./App";
 
 //*렌더링? 화면에 표시하는 것
-
-//만들어야 하는 것
-//1. 작성자
-//2. text area (일기 본문) *input 태그와 사용방법이 완전 똑같음
-//3. 오늘의 기분 점수 1-5
-function DiaryEditor({ onCreate }) {
+function DiaryEditor() {
+  const { onCreate } = useContext(DiaryDispatchContext);
+  // useEffect(() => {
+  //   console.log("DiaryEditor 렌더링");
+  // });
   //거의 동일한 작업을 하는 setState는 따로 두지않고 state끼리 묶어도 된다.
   //조건은 setState가 하는 작업이 각각의 state에 동일하게 들어가야 할 거 같다.
 
@@ -38,9 +38,6 @@ function DiaryEditor({ onCreate }) {
 
   //onChange 이벤트 핸들러가 2번 반복되므로 하나로 뭉쳐주겠음
   const handleChangeState = (e) => {
-    console.log(e.target.name);
-    console.log(e.target.value);
-
     setState({
       ...state,
       //괄호 표기법으로 각각의 state에 다른 다른 값을 업데이트해준다.
@@ -111,4 +108,4 @@ function DiaryEditor({ onCreate }) {
   );
 }
 
-export default DiaryEditor;
+export default React.memo(DiaryEditor);

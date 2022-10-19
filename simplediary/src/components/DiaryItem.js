@@ -1,14 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
+import { DiaryDispatchContext } from "../App";
 
-function DiaryItem({
-  id,
-  author,
-  contents,
-  emotion,
-  created_date,
-  onRemove,
-  onEdit,
-}) {
+function DiaryItem({ id, author, contents, emotion, created_date }) {
+  const { onRemove, onEdit } = useContext(DiaryDispatchContext);
+
+  useEffect(() => {
+    console.log(`${id}번째 친구가 렌더링되었습니다.`);
+  });
   const localContentsInput = useRef();
   //new Date()에 우리가 만들어놓은 밀리세컨드를 인자로 넘겨주면
   // Date객체를 생성해준다. 이 객체에 toLocaleString() 메소드를 쓰면 알아볼 수 있는 날짜로 변환시켜준다.
@@ -86,4 +84,4 @@ function DiaryItem({
   );
 }
 
-export default DiaryItem;
+export default React.memo(DiaryItem);
