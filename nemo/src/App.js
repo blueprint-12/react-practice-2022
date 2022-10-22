@@ -1,5 +1,6 @@
 import React from "react";
 import Nemo from "./Nemo";
+import ReactPortal from "./ReactPortal";
 
 class App extends React.Component {
   constructor(props) {
@@ -55,6 +56,9 @@ class App extends React.Component {
           <button onClick={this.addNemo}>하나 추가</button>
           <button onClick={this.removeNemo}>하나 빼기</button>
         </div> */}
+        <ReactPortal>
+          <p>안녕하세요</p>
+        </ReactPortal>
       </div>
     );
   }
