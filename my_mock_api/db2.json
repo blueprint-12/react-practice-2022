@@ -1,0 +1,197 @@
+{
+  "DUMMY_ROOM_LIST": [
+    {
+      "id": 0,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title1",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-03-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 3,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title2",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagName": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 4,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title3",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-01-25",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title4",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-03-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 2,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title5",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-07-01",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 3,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title6",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-03-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 3,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title7",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-02-11",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title8",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title8",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title8",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title8",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://empire-s3-production.bobvila.com/pages/538/original/Bedroom.jpg?1310503752",
+      "title": "Study Title8",
+      "content": "스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용 스터디 내용 내용 내용 내용스터디 내용 내용 내용 내용",
+      "date": "2022-04-15",
+      "tagId": [
+        "자격증",
+        "자기계발"
+      ],
+      "groupNum": 1,
+      "isLiked": false,
+      "day": "월",
+      "sleep_time": "10:00"
+    },
+    {
+      "day": "화",
+      "sleep_time": "11:00",
+      "id": 12
+    },
+    {
+      "day": "금",
+      "sleep_time": "20:00",
+      "id": 13
+    },
+    {
+      "day": "화",
+      "sleep_time": "18:00",
+      "id": 14
+    }
+  ]
+}
