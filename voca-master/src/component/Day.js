@@ -1,26 +1,22 @@
 import Word from "./Word";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
 
 export default function Day() {
-  const [wordList, setWordList] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3001/words")
-      .then((res) => res.json())
-      .then((data) => setWordList(data));
-  }, []);
-
   const { day } = useParams();
-  const filteredWordList = wordList.filter(
-    (word) => word.day === parseInt(day)
-  );
+  const wordList = useFetch(`http://localhost:3001/words?day=${day}`);
+
+  //파라미터 아이디로 filter 사용없이 데이터 가져오기 가능
+  // const filteredWordList = wordList.filter(
+  //   (word) => word.day === parseInt(day)
+  // );
 
   return (
     <>
       <h2>Day {day}</h2>
       <table>
         <tbody>
-          {filteredWordList.map((word) => (
+          {wordList.map((word) => (
             <Word word={word} key={word.id} />
           ))}
         </tbody>

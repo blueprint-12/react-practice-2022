@@ -5,6 +5,7 @@
 ## 설치 패키지
 
 - json-server
+  > 터미널 창 2개 띄우고 하나는 3000으로 내 react 서버를 키고, 나머지 하나는 json-server를 통해 원하는 포트에 서버를 켜줘야한다.
 
 ```bash
   npm i -g json-server #전역으로 설치
