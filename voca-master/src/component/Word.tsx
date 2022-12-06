@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 
-export default function Word({ word: w }) {
+interface IProps {
+  word: IWord;
+}
+
+// export를 통해 인터페이스 내보내주기(다른 곳에서도 사용)
+export interface IWord {
+  id: number;
+  day: number;
+  eng: string;
+  kor: string;
+  isDone: boolean;
+}
+export default function Word({ word: w }: IProps) {
   // useState의 기본값인 word와 변수명이 겹치므로
   // 받아오는 word props를 새로운 변수명인 w로 할당하여 사용
   const [word, setWord] = useState(w);
@@ -36,7 +48,9 @@ export default function Word({ word: w }) {
         method: "DELETE",
       }).then((res) => {
         if (res.ok) {
-          setWord({ id: 0 });
+          // 삭제 요청을 하고 DB에 성공적으로 요소가 삭제됐다면,
+          // state를 변경하여, 리렌더링이 일어나도록 함
+          setWord({ ...word, id: 0 });
         }
       });
     }
