@@ -4,6 +4,13 @@
 
 ## 설치 패키지
 
+- typescript
+  > create-react-app으로 만든 프로젝트에는 TS를 적용할 때 여러 개의 패키지를 추가로 설치해줘야 한다. 이후, js -> .ts , jsx -> .tsx
+
+```bash
+npm i typescript @types/node @types/react @types/react-dom @types/jest @types/react-router-dom
+```
+
 - json-server
   > 터미널 창 2개 띄우고 하나는 3000으로 내 react 서버를 키고, 나머지 하나는 json-server를 통해 원하는 포트에 서버를 켜줘야한다.
 
