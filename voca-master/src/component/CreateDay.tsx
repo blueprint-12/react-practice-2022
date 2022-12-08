@@ -25,23 +25,14 @@ export default function CreateDay() {
 
   function delDay() {
     if (window.confirm(`"${days.length}일"을 삭제하시겠습니까?`)) {
-      Promise.all([
-        fetch(`http://localhost:3001/days/${days.length}`, {
-          method: "DELETE",
-        }),
-        fetch(`http://localhost:3001/words?day=3`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({}),
-        }),
-      ]).then((res) => console.log(res));
-
-      // if (dayRes.ok && wordRes.ok) {
-      //   alert("날짜 삭제가 완료되었습니다.");
-      //   history.push(`/`);
-      // }
+      fetch(`http://localhost:3001/days/${days.length}`, {
+        method: "DELETE",
+      }).then((res) => {
+        if (res.ok) {
+          alert("날짜 삭제가 완료되었습니다.");
+          history.push(`/`);
+        }
+      });
     }
   }
   return (

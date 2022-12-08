@@ -7,34 +7,21 @@
     {
       "id": 2,
       "day": 2
+    },
+    {
+      "day": 3,
+      "id": 3
+    },
+    {
+      "day": 4,
+      "id": 4
     }
   ],
   "words": [
     {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": false
-    },
-    {
-      "day": 2,
-      "eng": "mouse",
-      "kor": "쥐",
-      "isDone": false,
-      "id": 9
-    },
-    {
-      "day": 2,
-      "eng": "apple",
-      "kor": "사과",
-      "isDone": false,
-      "id": 12
-    },
-    {
       "day": 3,
-      "eng": "window",
-      "kor": "창문",
+      "eng": "computer",
+      "kor": "컴퓨터",
       "isDone": false,
       "id": 13
     },
@@ -43,14 +30,7 @@
       "eng": "computer",
       "kor": "컴퓨터",
       "isDone": false,
-      "id": 17
-    },
-    {
-      "day": 4,
-      "eng": "computer",
-      "kor": "컴퓨터",
-      "isDone": false,
-      "id": 18
+      "id": 14
     }
   ]
 }
