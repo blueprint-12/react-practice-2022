@@ -8,12 +8,29 @@ export default function CreateWord() {
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
 
+  const engRef = useRef<HTMLInputElement>(null);
+  const korRef = useRef<HTMLInputElement>(null);
+  //select box는 select에 Ref를 달아준다
+  const dayRef = useRef<HTMLSelectElement>(null);
+
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    if (engRef.current?.value === "" && engRef.current?.value.length <= 2) {
+      alert("빈 칸에 정확한 값을 입력해주세요.");
+      engRef.current.focus();
+      return;
+    }
+
+    if (korRef.current?.value === "" && korRef.current?.value.length <= 2) {
+      alert("빈 칸에 정확한 값을 입력해주세요.");
+      korRef.current.focus();
+    }
 
     if (!isLoading && dayRef.current && engRef.current && korRef.current) {
       setIsLoading(true);
 
+      console.log(engRef.current);
       //value 값에 null이 들어오면 안되기 때문에 조건문에서 current 객체 체킹
       const day = parseInt(dayRef.current.value);
       const eng = engRef.current.value;
@@ -40,11 +57,6 @@ export default function CreateWord() {
       });
     }
   }
-
-  const engRef = useRef<HTMLInputElement>(null);
-  const korRef = useRef<HTMLInputElement>(null);
-  //select box는 select에 Ref를 달아준다
-  const dayRef = useRef<HTMLSelectElement>(null);
 
   return (
     <form onSubmit={onSubmit}>
