@@ -5,7 +5,7 @@ function DiaryItem({ id, author, contents, emotion, created_date }) {
   const { onRemove, onEdit } = useContext(DiaryDispatchContext);
 
   useEffect(() => {
-    console.log(`${id}번째 친구가 렌더링되었습니다.`);
+    // console.log(`${id}번째 친구가 렌더링되었습니다.`);
   });
   const localContentsInput = useRef();
   //new Date()에 우리가 만들어놓은 밀리세컨드를 인자로 넘겨주면

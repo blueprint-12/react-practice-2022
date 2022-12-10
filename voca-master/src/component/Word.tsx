@@ -13,8 +13,6 @@ export interface IWord {
   isDone: boolean;
 }
 export default function Word({ word: w }: IProps) {
-  // useState의 기본값인 word와 변수명이 겹치므로
-  // 받아오는 word props를 새로운 변수명인 w로 할당하여 사용
   const [word, setWord] = useState(w);
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);

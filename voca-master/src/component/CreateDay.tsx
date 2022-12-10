@@ -24,8 +24,9 @@ export default function CreateDay() {
   }
 
   function delDay() {
-    if (window.confirm(`"${days.length}일"을 삭제하시겠습니까?`)) {
-      fetch(`http://localhost:3001/days/${days.length}`, {
+    let dayLength = days.length;
+    if (window.confirm(`"${dayLength}일"을 삭제하시겠습니까?`)) {
+      fetch(`http://localhost:3001/days/${dayLength}`, {
         method: "DELETE",
       }).then((res) => {
         if (res.ok) {
