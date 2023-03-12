@@ -6,6 +6,7 @@
 - simplediary (다이어리 테스트 폴더, 리액트 hooks를 통한 최적화(useCallback, useMemo, React.memo, useContext, useReducer ))
 - bucket_list(버킷 리스트 테스팅 폴더)
 - redux_and_firebase_ex(리덕스와 파이어베이스를 연동한 투두리스트 테스트)
+- vite-project (비트 JS 번들러 툴 사용해보기)
 
 ### JS & React 개념
 
@@ -19,3 +20,4 @@
 - closure_ex
 - event_listener_ex
 - lifecycle (리액트 라이프 사이클 관련 개념)
+- authcompo-test (마운트 시점 관련 테스트, lazy init)

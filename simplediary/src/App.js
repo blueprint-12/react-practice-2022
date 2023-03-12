@@ -103,6 +103,7 @@ function App() {
   const memoizedDispatches = useMemo(() => {
     return { onCreate, onRemove, onEdit };
   }, []);
+
   //리액트에서는 return을 가지고 있는 함수를 메모이제이션할 수 있다.
   //메모이제이션하고 싶은 함수를 useMemo를 통해 감싸주면 된다.
   //useMemo()의 첫번째 인자로 콜백함수를 받고 이 콜백함수가 리턴하는 값(연산)을 최적화할 수 있도록 도와준다.
