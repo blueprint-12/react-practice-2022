@@ -24,4 +24,4 @@
 - authcompo-test (마운트 시점 관련 테스트, lazy init)
 
 
-+testing git command: status => diff => pull
+
