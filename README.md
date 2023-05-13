@@ -22,3 +22,6 @@
 - event_listener_ex
 - lifecycle (리액트 라이프 사이클 관련 개념)
 - authcompo-test (마운트 시점 관련 테스트, lazy init)
+
+
++testing git command: status => diff => pull
